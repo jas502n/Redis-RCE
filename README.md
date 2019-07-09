@@ -64,11 +64,32 @@ incu6us/redis5                Redis 5 (beta) to play with a new features   0    
 yimiding/redis5.05                                                         0                    
 jeetkn/centos_redis           centos7 + redis5.0.3+ ReJson + rediSearch    0   
 ```
-### 0x02 启动redis5 docker
-`docker run --name redis5 -d -v $PWD:/data --restart=always -p 6379:6379 hareemca123/redis5:alpine`
+### 0x02 docker pull redis5
+```
+docker pull hareemca123/redis5:alpine
+alpine: Pulling from hareemca123/redis5
+4fe2ade4980c: Pull complete 
+47fa4eeb2853: Pull complete 
+4e971ebf579e: Pull complete 
+e2187b6a3d91: Pull complete 
+b944fad88755: Pull complete 
+9b71ca914208: Pull complete 
+Digest: sha256:60f6a913f606341be11686f604ef97d79be32d6ee22f5036ea592423e0950ca4
+Status: Downloaded newer image for hareemca123/redis5:alpine
+
+```
+### 0x03 Start redis5 docker
+```
+docker run --name redis5 -d -v $PWD:/data --restart=always -p 6379:6379 hareemca123/redis5:alpine
+
+cf1e25077f6e5f88e6ba6a5ae4bcc17e38c27a28961f52932ad7c77c3fc446d9
+```
 
 
-### 0x03 git clone github.com/Ridter/redis-rce
+### 0x04 git clone github.com/Ridter/redis-rce
 
 
-
+```
+redis-rce# ls
+exp_lin.so  exp_osx.so  README.md  redis-rce.py
+```
