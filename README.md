@@ -98,4 +98,6 @@ exp_lin.so  exp_osx.so  README.md  redis-rce.py
 ```
 ### 参考链接：
 
+https://2018.zeronights.ru/wp-content/uploads/materials/15-redis-post-exploitation.pdf
+
 https://github.com/Ridter
