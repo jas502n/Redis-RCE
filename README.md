@@ -93,3 +93,6 @@ cf1e25077f6e5f88e6ba6a5ae4bcc17e38c27a28961f52932ad7c77c3fc446d9
 redis-rce# ls
 exp_lin.so  exp_osx.so  README.md  redis-rce.py
 ```
+### 参考链接：
+
+https://github.com/Ridter
