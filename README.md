@@ -5,6 +5,21 @@
 #### python code from https://github.com/Ridter/redis-rce
 
 ![](./redis-rce.jpg)
+#####  通过加载so文件，扩展新命令system.exec进行 命令执行成功
+`strings exp_lin.so |grep sys`
+
+```
+system
+system.exec
+sys_errlist.h
+sys_nerr
+sys_errlist
+_sys_siglist
+
+```
+
+![](./redis-exec.jpg)
+![](./redis-exec-result.jpg)
 
 
 ### Usage:
